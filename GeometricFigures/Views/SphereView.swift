@@ -21,6 +21,7 @@ struct SphereView: View {
                 // Label (describe what the slider is for)
                 Text("Radius")
                 
+                //1. INPUT
                 // Slider control - to allow for usser input
                 Slider(
                     value: $currentSphere.radius,
@@ -29,8 +30,18 @@ struct SphereView: View {
                     
                 )
                 
+                //3.OUTPUT
                 // Label (show the current slider value)
                 Text("Radius is:  \(currentSphere.radius.formatted())")
+                
+                //Label ( show the diameter)
+                Text("Diameter is:  \(currentSphere.diameter.formatted())")
+                
+                //Label ( show the surfaceArea)
+                Text("surfaceArea is:  \(currentSphere.surfaceArea.formatted())")
+                
+                //Label ( show the volume)
+                Text("volume is:  \(currentSphere.volume.formatted())")
             }
         }
     }

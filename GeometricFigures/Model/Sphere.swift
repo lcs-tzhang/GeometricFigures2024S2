@@ -4,11 +4,12 @@
 //
 //  Created by xinyu zhang on 2024-10-28.
 //
-
-import Foundation
+protocol Desribable {
+    var description: String {get}
+}
 
 struct Sphere {
-    
+    //2.PROCESS
     var radius: Double
     var diameter: Double {
         return radius * 2
